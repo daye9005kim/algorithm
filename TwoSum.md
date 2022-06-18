@@ -15,7 +15,7 @@ class Solution {
             if(isset($arr[$num])) {
                 return array($arr[$num], $key);
             }
-                $arr[$val] = $key;
+            $arr[$val] = $key;
         }
         
     }
