@@ -12,7 +12,11 @@ class Solution {
         
         foreach($nums as $key => $val) {
             $num = $target - $val;
+            
             if(isset($arr[$num])) {
+                if ($key === $arr[$num]) {
+                    continue;
+                }
                 return array($arr[$num], $key);
             }
             $arr[$val] = $key;
