@@ -1,10 +1,14 @@
  # https://www.acmicpc.net/problem/10988
 import sys
 
-a = sys.stdin.readline().strip()
+text = sys.stdin.readline().strip().upper()
+key = list(set(text))
+cnt = []
+for i in key:
+    cnt.append(text.count(i))
 
-if a == a[::-1]:
-    print(1)
+max_cnt = max(cnt)
+if cnt.count(max_cnt) > 1:
+    print("?")
 else:
-    print(0)
-
+    print(key[cnt.index(max_cnt)])
