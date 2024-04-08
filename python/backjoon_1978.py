@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/9506
+# https://www.acmicpc.net/problem/1978
 import sys
 
 n = int(sys.stdin.readline().strip())
