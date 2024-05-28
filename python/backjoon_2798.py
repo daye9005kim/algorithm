@@ -2,27 +2,16 @@
 import sys
 
 n, m = map(int, sys.stdin.readline().split())
-arr = sys.stdin.readline().split()
-arr = list(map(int, arr))
-arr.sort()
-print(arr)
+arr = list(map(int, sys.stdin.readline().split()))
+arr.reverse()
 
-h = len(arr)
-tmp = 0
 sum = 0
-max = []
-for i in range(h):
-    for j in range(i + 1, h):
-        for k in range(j + 1, h):
-            sum = int(arr[i]) + int(arr[j]) + int(arr[k])
-
-            if tmp < sum <= m:
-                print(arr[i], '+', arr[j], '+', arr[k], '=', sum)
-                max.append(sum)
-                break
-
-            tmp = sum
-
-
-max.sort()
-print(max[-1])
+max = 0
+for i in range(n - 2):
+    for j in range(i + 1, n - 1):
+        if arr[i] + arr[j] >= m:
+            continue
+        for k in range(j + 1, n):
+            sum = arr[i] + arr[j] + arr[k]
+            if max <= sum <= m: max = sum
+print(max)
