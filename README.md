@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
 
-|단계|제목|진행|문제|
+|단계|제목|문제|진행|
 |------|---|---|---|
 |12|브루트 포스|6|<img src="https://img.shields.io/badge/도전중-2C5BB4?style=flat-square"/>|
 |11|시간 복잡도|7|<img src="https://img.shields.io/badge/완료-006600?style=flat-square"/>|
